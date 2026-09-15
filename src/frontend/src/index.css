@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-primary-light hover:shadow-elevated focus:outline-none focus:ring-2 focus:ring-primary/40 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-accent {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-foreground transition-all hover:bg-accent-dark hover:shadow-shutter focus:outline-none focus:ring-2 focus:ring-accent/40 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-semibold text-foreground/70 transition-all hover:bg-muted hover:text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20;
+  }
+  .btn-danger {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-destructive px-4 py-2.5 text-sm font-semibold text-white transition-all hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-destructive/40;
+  }
+  .input-field {
+    @apply w-full rounded-lg border border-input bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-foreground/40 transition-all focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20;
+  }
+  .label-field {
+    @apply mb-1.5 block text-xs font-semibold tracking-widest uppercase text-foreground/60;
+  }
+  .card-surface {
+    @apply rounded-2xl bg-card shadow-photo transition-all hover:shadow-elevated;
+  }
+}
+
+@media print {
+  .no-print { display: none !important; }
+  body { background: white !important; }
+  .print-block { display: block !important; }
+}
