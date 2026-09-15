@@ -1,0 +1,18 @@
+{
+  "overview": "Aplikasi penyimpanan foto harian dengan login username dan password, galeri foto, laporan, dan pengaturan akun.",
+  "features": [
+    "Login dengan username dan password",
+    "Menyimpan dan mengelola foto harian",
+    "Melihat laporan foto harian/mingguan/bulanan",
+    "Mengubah username akun",
+    "Mengubah sandi (password) akun"
+  ],
+  "category": "photo-storage",
+  "tags": [
+    "photo",
+    "storage",
+    "gallery",
+    "product-safety"
+  ],
+  "last_updated": "2026-09-14T08:26:42.397Z"
+}
